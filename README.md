@@ -7,7 +7,10 @@ For setting up project following this task:
 git clone https://github.com/freedevm/DRE_ERC1155.git
 cd DRE_ERC1155
 cp .env.sample .env
+```
 
+
+```
 npm install
 
 npx hardhat compile
