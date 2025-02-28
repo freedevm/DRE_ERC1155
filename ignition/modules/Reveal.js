@@ -1,8 +1,6 @@
 const hre = require("hardhat");
 
 const contractAddress = '0x5711995e40ad8eba9748fd546cd399bbb6baf15c';
-const ownerAddress = '0xEA38026AF023cc689659a9D2A35046f8980821f2';
-const baseUri = "https://ipfs.io/ipfs/bafybeia3tvaiuvxrq5orcg6etxw2qqmg5fw4vxq44sros3kb2wwuu5di2m/";
 
 async function mint() {
     const contract = await hre.ethers.getContractAt("DRE", contractAddress);
