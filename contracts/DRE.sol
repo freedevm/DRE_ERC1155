@@ -68,4 +68,9 @@ contract DRE is ERC1155, Ownable {
         }
         return string(abi.encodePacked(collection.baseURI, Strings.toString(tokenId), ".json"));
     }
+
+    // Get the tokenID
+    function tokenIdCounter() public view returns (uint256) {
+        return _tokenIdCounter;
+    }
 }

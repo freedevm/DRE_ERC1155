@@ -25,6 +25,8 @@ describe("DRE Collection", function () {
     it("Should allow owner to mint NFTs", async function () {
         await dre.mint(addr1.address, 1, 0);
         expect(await dre.balanceOf(addr1.address, 0)).to.equal(1);
+
+        expect(await dre.tokenIdCounter()).to.equal(1);
     });
 
     it("Should allow owner to mint Two NFTs", async function () {
